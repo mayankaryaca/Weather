@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS_Mayank_101300566" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tV-Xp-bvm">
+                                <rect key="frame" x="20" y="826" width="374" height="36"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <state key="normal" title="Fetch Weather Data">
+                                    <color key="titleColor" red="0.087974928319454193" green="0.62924325466156006" blue="0.7144845724105835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchWeatherDetailsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IoZ-rr-leA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature ( Celsius )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imY-WR-TaH">
+                                <rect key="frame" x="20" y="196.5" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.08669879287481308" green="0.093579418957233429" blue="0.7410462498664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYQ-XR-cvp">
+                                <rect key="frame" x="20" y="119" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.08669879287481308" green="0.093579418957233429" blue="0.7410462498664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spg-nW-Bg9">
+                                <rect key="frame" x="20" y="158" width="374" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2v-ml-sg9">
+                                <rect key="frame" x="20" y="44" width="374" height="55"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                <color key="textColor" red="0.087974928319454193" green="0.62924325466156006" blue="0.7144845724105835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feels Like Temperature ( Celsius )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr4-je-7HR">
+                                <rect key="frame" x="20" y="274" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.08669879287481308" green="0.093579418957233429" blue="0.7410462498664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFO-c4-S87">
+                                <rect key="frame" x="20" y="313" width="374" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Speed ( KPH )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcN-e3-GFk">
+                                <rect key="frame" x="20" y="351.5" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.08669879287481308" green="0.093579418957233429" blue="0.7410462498664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yG-Py-Lgh">
+                                <rect key="frame" x="20" y="390.5" width="374" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Direction " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJp-ZR-r3q">
+                                <rect key="frame" x="20" y="429" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.08669879287481308" green="0.093579418957233429" blue="0.7410462498664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8S-SK-yuq">
+                                <rect key="frame" x="20" y="468" width="374" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UV Index" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRU-YQ-pge">
+                                <rect key="frame" x="20" y="506.5" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" red="0.08669879287481308" green="0.093579418957233429" blue="0.7410462498664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb4-Fw-I6c">
+                                <rect key="frame" x="20" y="545.5" width="374" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTn-xJ-4jW">
+                                <rect key="frame" x="20" y="235.5" width="374" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0yG-Py-Lgh" firstAttribute="top" secondItem="OcN-e3-GFk" secondAttribute="bottom" constant="10" id="0R9-Wn-jgW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f8S-SK-yuq" secondAttribute="trailing" constant="20" id="0de-WS-gAf"/>
+                            <constraint firstItem="fb4-Fw-I6c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1HV-h5-ljl"/>
+                            <constraint firstItem="Rr4-je-7HR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1Vb-2c-r6T"/>
+                            <constraint firstItem="0yG-Py-Lgh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2XT-Ee-j07"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6tV-Xp-bvm" secondAttribute="trailing" constant="20" id="4gw-r1-mDF"/>
+                            <constraint firstItem="OcN-e3-GFk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4yS-oX-rpL"/>
+                            <constraint firstItem="wRU-YQ-pge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7LD-WX-Djd"/>
+                            <constraint firstItem="MYQ-XR-cvp" firstAttribute="top" secondItem="i2v-ml-sg9" secondAttribute="bottom" constant="20" id="ANE-OC-2U6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0yG-Py-Lgh" secondAttribute="trailing" constant="20" id="Arx-g6-lQ5"/>
+                            <constraint firstItem="i2v-ml-sg9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Avd-fm-hjw"/>
+                            <constraint firstItem="imY-WR-TaH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BFm-ad-eLi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i2v-ml-sg9" secondAttribute="trailing" constant="20" id="BxO-de-gSj"/>
+                            <constraint firstItem="f8S-SK-yuq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E7Q-zK-Rha"/>
+                            <constraint firstItem="i2v-ml-sg9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FoS-M7-q5H"/>
+                            <constraint firstItem="Spg-nW-Bg9" firstAttribute="top" secondItem="MYQ-XR-cvp" secondAttribute="bottom" constant="10" id="J5b-H9-UBO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MYQ-XR-cvp" secondAttribute="trailing" constant="20" id="J9f-aT-N9R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wRU-YQ-pge" secondAttribute="trailing" constant="20" id="JMz-p9-bjy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rr4-je-7HR" secondAttribute="trailing" constant="20" id="L4N-Je-HA1"/>
+                            <constraint firstItem="OcN-e3-GFk" firstAttribute="top" secondItem="eFO-c4-S87" secondAttribute="bottom" constant="10" id="OE4-dp-PbX"/>
+                            <constraint firstItem="eFO-c4-S87" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Qbs-wk-0Bi"/>
+                            <constraint firstItem="MYQ-XR-cvp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TX5-Q8-coV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OcN-e3-GFk" secondAttribute="trailing" constant="20" id="TfZ-ZI-4Xp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eFO-c4-S87" secondAttribute="trailing" constant="20" id="W86-yq-T7n"/>
+                            <constraint firstItem="fb4-Fw-I6c" firstAttribute="top" secondItem="wRU-YQ-pge" secondAttribute="bottom" constant="10" id="WvQ-1i-qvw"/>
+                            <constraint firstItem="rJp-ZR-r3q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZLi-ar-m3a"/>
+                            <constraint firstItem="6tV-Xp-bvm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZvB-tl-csR"/>
+                            <constraint firstItem="Rr4-je-7HR" firstAttribute="top" secondItem="rTn-xJ-4jW" secondAttribute="bottom" constant="10" id="a24-gh-hNa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fb4-Fw-I6c" secondAttribute="trailing" constant="20" id="aUF-FJ-gHu"/>
+                            <constraint firstItem="eFO-c4-S87" firstAttribute="top" secondItem="Rr4-je-7HR" secondAttribute="bottom" constant="10" id="crI-KT-2Ba"/>
+                            <constraint firstItem="rTn-xJ-4jW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dE9-Xq-nVf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Spg-nW-Bg9" secondAttribute="trailing" constant="20" id="l8C-Z2-2rU"/>
+                            <constraint firstItem="rJp-ZR-r3q" firstAttribute="top" secondItem="0yG-Py-Lgh" secondAttribute="bottom" constant="10" id="mIn-Ej-v3P"/>
+                            <constraint firstItem="wRU-YQ-pge" firstAttribute="top" secondItem="f8S-SK-yuq" secondAttribute="bottom" constant="10" id="pa4-uT-j3Q"/>
+                            <constraint firstItem="Spg-nW-Bg9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qfB-dj-wcp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rTn-xJ-4jW" secondAttribute="trailing" constant="20" id="tEA-ZT-2fd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rJp-ZR-r3q" secondAttribute="trailing" constant="20" id="uO6-z3-AYk"/>
+                            <constraint firstItem="6tV-Xp-bvm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wos-jJ-rzT"/>
+                            <constraint firstItem="f8S-SK-yuq" firstAttribute="top" secondItem="rJp-ZR-r3q" secondAttribute="bottom" constant="10" id="wzS-ta-dU4"/>
+                            <constraint firstItem="rTn-xJ-4jW" firstAttribute="top" secondItem="imY-WR-TaH" secondAttribute="bottom" constant="10" id="x72-hZ-UPz"/>
+                            <constraint firstItem="imY-WR-TaH" firstAttribute="top" secondItem="Spg-nW-Bg9" secondAttribute="bottom" constant="10" id="xiQ-M9-c81"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="imY-WR-TaH" secondAttribute="trailing" constant="20" id="y9l-cB-YzF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentLocationLabel" destination="Spg-nW-Bg9" id="qd1-6L-yMT"/>
+                        <outlet property="feelsLikeTempLabel" destination="eFO-c4-S87" id="1GH-6F-uFQ"/>
+                        <outlet property="tempLabel" destination="rTn-xJ-4jW" id="fKS-ov-mk9"/>
+                        <outlet property="uvIndexLabel" destination="fb4-Fw-I6c" id="Ve6-jh-u9m"/>
+                        <outlet property="windDirectionLabel" destination="f8S-SK-yuq" id="erV-d6-nX3"/>
+                        <outlet property="windSpeedLabel" destination="0yG-Py-Lgh" id="XSb-QL-sFm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="-512.27678571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

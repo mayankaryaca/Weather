@@ -1,5 +1,5 @@
 # Weather
-Weather of your current location
+#Weather of your current location
 
 The Weather App displays the data of users current location.
 

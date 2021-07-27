@@ -1,5 +1,4 @@
-# Weather
-Description : Weather of your current location
+## :books: Weather 
 
 The Weather App displays the data of users current location.
 
@@ -11,6 +10,11 @@ The recieved Lat and Lng are then used to make an API call.
 
 
 The recieved data is then inflated on the UI using Observable Objects.
+
+## :woman_office_worker: :man_office_worker: Authors
+
+[Mayank](https://github.com/mayankaryaca)
+student ID: 101300566
 
 ![Simulator Screen Shot - iPhone 11 Pro - 2021-07-27 at 16 36 48](https://user-images.githubusercontent.com/78885735/127223913-75712eec-40e6-4089-94f7-9268090bd80d.png)
 

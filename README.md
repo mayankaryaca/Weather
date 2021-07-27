@@ -8,7 +8,7 @@ The app get data from users current location using GeoLocation
 The recieved Lat and Lng are then used to make an API call.
 
 *let apiFrontURL = "https://api.weatherapi.com/v1/current.json?key=ceb4ee17b82e42b58bb220920212105&q="
-*let apiBackURL = "&aqi=no"       
+  *let apiBackURL = "&aqi=no"       
 *let URL = apiFrontURL + location + apiBackURL
 
 The recieved data is then inflated on the UI using Observable Objects.
